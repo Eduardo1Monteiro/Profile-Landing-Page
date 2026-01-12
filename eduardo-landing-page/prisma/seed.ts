@@ -20,7 +20,6 @@ async function main() {
     },
   });
 
-  // 2. Projeto RISC-V CPU
   const cpuSim = await prisma.project.upsert({
     where: { slug: 'risc-v-cpu' },
     update: {},
@@ -31,7 +30,7 @@ async function main() {
       githubUrl: 'https://github.com/Eduardo1Monteiro/RISC-V_CPU',
       liveUrl: null,
       tags: ['C++', 'Assembly', 'Arquitetura de Computadores', 'Baixo Nível'],
-      pinned: true, // Também fixado
+      pinned: true,
       imageUrl: null,
     },
   });

@@ -6,7 +6,7 @@ import { Menu, X, Github } from 'lucide-react';
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Contato', href: '#contact' },
+  //{ label: 'Contato', href: '#contact' },
 ];
 
 export default function NavBar() {
@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b bg-black/50 backdrop-blur-2xl border-white/10">
         <div className="mx-auto px-6 h-16 flex items-center justify-between">
 
           <Link href="/" className="text-xl font-bold tracking-tight text-white hover:text-purple-400 transition-colors">
