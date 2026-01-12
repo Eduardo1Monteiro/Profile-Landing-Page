@@ -1,10 +1,18 @@
-import "dotenv/config";
+import { Pool } from 'pg' // 1. Importe o Pool do driver nativo
 import { PrismaPg } from '@prisma/adapter-pg'
 import { PrismaClient } from '../generated/prisma/client'
 
-const connectionString = `${process.env.DATABASE_URL}`
+const globalForPrisma = global as unknown as { prisma: PrismaClient }
 
-const adapter = new PrismaPg({ connectionString })
-const prisma = new PrismaClient({ adapter })
+const createPrismaClient = () => {
+  const connectionString = process.env.DATABASE_URL
 
-export { prisma }
+  const pool = new Pool({ connectionString })
+  const adapter = new PrismaPg(pool)
+
+  return new PrismaClient({ adapter })
+}
+
+export const prisma = globalForPrisma.prisma || createPrismaClient()
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
