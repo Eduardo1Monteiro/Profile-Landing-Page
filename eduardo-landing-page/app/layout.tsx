@@ -11,7 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Exposição de Projetos",
+  title: "Eduardo.dev",
   description: "Site destinado a exposição de projetos desenvolvidos por Eduardo Monteiro",
   authors: [{ name: "Eduardo Monteiro" }],
   creator: "Eduardo Monteiro"
