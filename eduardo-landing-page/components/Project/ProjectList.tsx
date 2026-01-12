@@ -1,7 +1,7 @@
 import ProjectItem from "./ProjectItem";
 import { getProjects } from "@/lib/utils";
 
-export async function ProjectList() {
+export default async function ProjectList() {
   const projects = await getProjects();
 
   if (projects.length === 0) {
