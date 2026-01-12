@@ -1,6 +1,6 @@
 # 🚀 Portfólio Profissional - Eduardo Monteiro
 
-![Project Preview](.eduardo-landing-page/public/images/cover.jpeg)
+![Project Preview](./eduardo-landing-page/public/images/cover.jpeg)
 
 > Uma Landing Page moderna desenvolvida para apresentar minha trajetória e projetos acadêmicos e profissionais.
 
