@@ -1,11 +1,22 @@
 import { Suspense } from "react";
 import ProjectList from "@/components/Project/ProjectList";
 
+const technologies = [
+  "Next.js",
+  "TypeScript",
+  "React",
+  "Tailwind CSS",
+  "CSS",
+  "PostgreSQL",
+  "Prisma",
+  "C"
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col gap-16 min-h-screen w-full px-6 pt-24 pb-20 max-w-5xl mx-auto">
 
-      {/* --- SEÇÃO SOBRE MIM --- */}
+      {/* --- SOBRE MIM --- */}
       <section id="sobre-mim" className="flex flex-col gap-6">
         <h1 className="font-bold text-4xl md:text-5xl leading-tight">
           Me chamo{" "}
@@ -26,7 +37,34 @@ export default function Home() {
         </p>
       </section>
 
-      {/* --- SEÇÃO PROJETOS --- */}
+      {/* --- TECH STACK --- */}
+      <section id="tech-stack" className="flex flex-col gap-8">
+        <div className="h-px w-full bg-gradient-to-r from-purple-500/50 via-purple-500/10 to-transparent"></div>
+
+        <h2 className="font-bold text-3xl md:text-3xl text-white">
+          Tecnologias
+        </h2>
+
+        <div className="flex flex-wrap gap-3">
+          {technologies.map((tech) => (
+            <div
+              key={tech}
+              className="
+                px-4 py-2 rounded-lg 
+                bg-white/5 border border-white/10 
+                text-slate-300 text-sm font-medium
+                hover:border-purple-500/50 hover:text-purple-300 hover:bg-white/10
+                transition-colors cursor-default select-none
+              "
+            >
+              {tech}
+            </div>
+          ))}
+        </div>
+
+      </section>
+
+      {/* --- PROJETOS --- */}
       <section id="projetos" className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-3xl md:text-4xl text-white">
