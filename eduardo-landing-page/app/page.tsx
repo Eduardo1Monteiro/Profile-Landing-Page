@@ -24,7 +24,7 @@ export default function Home() {
       <section id="sobre-mim" className="flex flex-col gap-6">
         <h1 className="font-bold text-4xl md:text-5xl leading-tight">
           Me chamo{" "}
-          <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-transparent">
             Eduardo Monteiro
           </span>
         </h1>
