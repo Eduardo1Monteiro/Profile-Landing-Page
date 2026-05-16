@@ -4,7 +4,7 @@ import ProjectList from "@/components/Project/ProjectList";
 const technologies = [
   "Next.js",
   "TypeScript",
-  "Adonis.js"
+  "Adonis.js",
   "React",
   "Tailwind CSS",
   "CSS",
