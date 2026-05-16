@@ -17,8 +17,8 @@ export default function NavBar() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b bg-black/50 backdrop-blur-2xl border-white/10">
         <div className="mx-auto px-6 h-16 flex items-center justify-between">
 
-          <Link href="/" className="text-xl font-bold tracking-tight text-white hover:text-purple-400 transition-colors">
-            Eduardo<span className="text-purple-500">.dev</span>
+          <Link href="/" className="text-xl font-bold tracking-tight text-white hover:text-green-400 transition-colors">
+            Eduardo<span className="text-green-500">.dev</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -61,7 +61,7 @@ export default function NavBar() {
       <aside
         className={`
           fixed top-0 right-0 z-50 h-full w-64 
-          bg-[#0f0518] border-l border-white/10 shadow-2xl
+          bg-[#05180f] border-l border-white/10 shadow-2xl
           transform transition-transform duration-300 ease-in-out
           ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}
           md:hidden
@@ -84,7 +84,7 @@ export default function NavBar() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsSidebarOpen(false)}
-                className="text-lg text-slate-300 hover:text-purple-400 transition-colors border-b border-white/5 pb-2"
+                className="text-lg text-slate-300 hover:text-green-400 transition-colors border-b border-white/5 pb-2"
               >
                 {item.label}
               </Link>
@@ -93,7 +93,7 @@ export default function NavBar() {
 
           <div className="mt-auto pt-8 border-t border-white/10">
             <div className="flex justify-center gap-6">
-              <Link href="https://github.com/Eduardo1Monteiro" target="_blank" className="text-slate-400 hover:text-purple-400">
+              <Link href="https://github.com/Eduardo1Monteiro" target="_blank" className="text-slate-400 hover:text-green-400">
                 <Github size={24} />
               </Link>
             </div>

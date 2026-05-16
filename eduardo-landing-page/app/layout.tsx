@@ -33,8 +33,8 @@ export default function RootLayout({
           w-full 
           bg-gradient-to-br 
           from-black 
-          via-[#0f0518] 
-          to-purple-950 
+          via-[#05180f] 
+          to-green-950 
           text-slate-200
           pt-24
         `}
