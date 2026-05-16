@@ -4,10 +4,14 @@ import ProjectList from "@/components/Project/ProjectList";
 const technologies = [
   "Next.js",
   "TypeScript",
+  "Adonis.js"
   "React",
   "Tailwind CSS",
   "CSS",
   "PostgreSQL",
+  "SQLite",
+  "Python",
+  "Playwright",
   "Prisma",
   "C"
 ];
@@ -26,7 +30,7 @@ export default function Home() {
         </h1>
 
         <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl">
-          Sou desenvolvedor web e estudante de Sistemas de Informação na
+          Sou desenvolvedor web, estudante de Sistemas de Informação e Pesquisador na
           Universidade Federal de Sergipe.
           <br className="hidden md:block" />
           Na universidade, atuo não somente como aluno, mas também como
